@@ -7,10 +7,10 @@
   <meta name="description" content="ACME provides ambiguity-aware guidance to help users refine code-based visualizations through multimodal editing.">
   <meta name="robots" content="noindex, nofollow, noarchive">
   <meta name="referrer" content="no-referrer">
-  <link rel="stylesheet" href="styles.css?v=1">
-  <link rel="stylesheet" href="assets/player.css?v=1">
-  <script defer src="cases.js?v=1"></script>
-  <script defer src="assets/player.js?v=1"></script>
+  <link rel="stylesheet" href="styles.css?v=15">
+  <link rel="stylesheet" href="assets/player.css?v=3">
+  <script defer src="cases.js?v=2"></script>
+  <script defer src="assets/player.js?v=3"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -19,28 +19,44 @@
       <h1>Ambiguity-Aware Multimodal Editing for Code-Based Visualization</h1>
       <div class="project-authors">
         <p class="authors">Anonymous Authors</p>
+        <p class="submission-status">Submitted to PacificVis 2027 · Conference Track</p>
       </div>
     </header>
 
-    <section class="examples-intro" aria-label="About these interactive examples">
-      <p>Natural-language follow-up questions require AI model calls, so this page presents only a selection of prepared direct manipulation and inline widget examples.</p>
-      <p><strong>ACME</strong> follows our ambiguity-aware editing framework to interpret editing requests, identify unresolved aspects of the intended change, and select appropriate clarification interactions. The system instantiates and configures predefined inline widgets, or dynamically generates direct manipulation modules with visual guidance. During generation, it establishes mappings between interaction outputs and the corresponding chart configuration; when necessary, it modifies the rendering code to expose the required properties as configuration parameters.</p>
-      <p>The examples below let you try these prepared interactions directly. Your adjustments update the chart configuration and are reflected in the visualization. The original visualizations are sourced from the <a href="https://observablehq.com/@d3/gallery" target="_blank" rel="noopener noreferrer">D3 Gallery</a> and normalized using the process described in Section 5.1 of the paper.</p>
-      <p>Natural-language follow-up questions require AI model calls, so this page presents only a set of direct manipulation and inline widget examples.</p>
+    <section class="project-abstract" aria-labelledby="abstract-title">
+      <h2 id="abstract-title">Abstract</h2>
+      <p>With the growing popularity of vibe coding, users increasingly use large language models (LLMs) to edit visualizations. However, users’ editing requests are often brief and underspecified, which can result in ambiguity and lead LLMs to make unintended changes. Although existing systems offer different ways, including sketching, direct manipulation and dynamic widgets, to help users express visualization editing requests, they provide limited support for diagnosing the ambiguities and adaptively offering appropriate clarification mechanisms. It shifts to users the burden of recognizing what is missing and determining how to express it. To address this gap, we present ACME, a visualization editing tool that provides Ambiguity-aware guidance to help users refine Code-based visualizations through Multimodal Editing. Guided by this ambiguity-aware editing framework, ACME uses LLMs to represent requests as editing actions and identify unresolved operations, target objects, or parameters. It then selects and dynamically configures or generates natural language questions, inline widgets, or direct manipulation interactions through which users clarify their intent and refine the visualization. We conduct a user study that examines how the framework affects editing performance and users’ experiences of expressing and clarifying their intent.</p>
     </section>
+
+    <section class="case-study" aria-labelledby="case-study-title">
+      <div class="section-heading case-study-heading">
+        <h2 id="case-study-title">Case Study</h2>
+      </div>
+      <p class="case-study-intro">The examples below showcase clarification through direct manipulation and inline widgets. The visualizations are sourced from the <a href="https://observablehq.com/@d3/gallery" target="_blank" rel="noopener noreferrer">D3 Gallery</a> and normalized by ACME as described in Section 5.1 of the paper.</p>
+      <p class="case-study-note">ACME provides immediate visual feedback as you use direct manipulation or inline widgets. Click <strong>Export</strong> to download the visualization code with your latest changes.</p>
 
     <section class="cases-section" aria-labelledby="dm-title">
       <div class="section-heading">
-        <h2 id="dm-title">Direct Manipulation</h2>
+        <h3 id="dm-title">Direct Manipulation</h3>
+        <p>Examples cover object selection, resizing, repositioning, text editing, and combinations of these interactions.</p>
       </div>
       <div class="case-grid" id="dm-case-grid"></div>
     </section>
 
     <section class="cases-section" aria-labelledby="iw-title">
       <div class="section-heading">
-        <h2 id="iw-title">Inline Widget</h2>
+        <h3 id="iw-title">Inline Widgets</h3>
+        <p>ACME provides predefined widgets in four categories: selectors, sliders, text and numeric inputs, and color controls. Selected examples from each category are shown below.</p>
       </div>
       <div class="case-grid" id="iw-case-grid"></div>
+    </section>
+
+    <section class="cases-section language-case" aria-labelledby="nl-title" hidden>
+      <div class="section-heading">
+        <h3 id="nl-title">Natural Language Follow-up Questions</h3>
+      </div>
+      <p>Demo coming soon.</p>
+    </section>
     </section>
   </main>
   <footer class="project-footer"><p>ACME · Anonymous research project</p></footer>
