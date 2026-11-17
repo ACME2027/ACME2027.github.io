@@ -35,7 +35,7 @@ h1 { margin: 0; font-size: clamp(38px, 4.5vw, 52px); font-weight: 600; letter-sp
 h2 { margin: 0; font-size: 36px; font-weight: 600; letter-spacing: -.015em; line-height: 1.3; }
 .cases-section { max-width: 1728px; margin: auto; padding: 45px 40px 64px; }
 .section-heading { text-align: center; margin-bottom: 32px; }
-.section-heading p { margin: 12px 0 0; font-size: 17px; line-height: 1.6; color: var(--muted); }
+.section-heading p { margin: 12px 0 0; }
 .case-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
 .case { min-width: 0; }
 .case-stage { aspect-ratio: 4 / 3; min-height: 210px; display: flex; align-items: center; justify-content: center; flex-direction: column; border: 1px solid var(--line); border-radius: 0; background: #fafafa; }
@@ -68,10 +68,10 @@ h2 { margin: 0; font-size: 36px; font-weight: 600; letter-spacing: -.015em; line
 
 .case-empty { grid-column: 1 / -1; margin: 0; padding: 28px 0; color: var(--muted); text-align: center; font-size: 14px; }
 
-.project-abstract { max-width: 1020px; margin: 0 auto; padding: 0 32px 30px; color: #555; font-size: 16px; line-height: 1.85; }
+.project-abstract { max-width: 1020px; margin: 0 auto; padding: 0 32px 30px; }
 .project-abstract h2 { margin-bottom: 24px; color: var(--text); text-align: center; }
 .project-abstract p { margin: 0; }
-@media (max-width: 700px) { .project-abstract { padding: 0 22px 20px; font-size: 15px; } }
+@media (max-width: 700px) { .project-abstract { padding: 0 22px 20px; } }
 
 .case-study-heading { margin: 32px 0 0; padding: 0 22px; }
 .case-study .section-heading h3 { margin: 0; font-size: 23px; font-weight: 600; letter-spacing: -.015em; line-height: 1.3; }
@@ -94,8 +94,8 @@ main .player-case * { font-family: var(--sans); }
   border-top: 1px solid var(--line);
 }
 
-.case-study-intro { max-width: 980px; margin: 24px auto 0; padding: 0 32px; color: #555; font-size: 16px; line-height: 1.85; }
-@media (max-width: 700px) { .case-study-intro { padding: 0 22px; font-size: 15px; } }
+.case-study-intro { max-width: 980px; margin: 24px auto 0; padding: 0 32px; }
+@media (max-width: 700px) { .case-study-intro { padding: 0 22px; } }
 
 #iw-case-grid .player-sentences { min-height: 86px; }
 @media (max-width: 700px) { #iw-case-grid .player-sentences { min-height: 0; } }
@@ -108,3 +108,7 @@ main .player-case * { font-family: var(--sans); }
 
 .case-study-note { max-width: 980px; margin: 14px auto 0; padding: 0 32px; color: var(--muted); font-size: 13px; line-height: 1.65; }
 @media (max-width: 700px) { .case-study-note { padding: 0 22px; } }
+
+/* Shared typography for the abstract and all section introductions. */
+.project-body { font-family: var(--sans); font-size: 16px; font-weight: 400; font-style: normal; line-height: 1.85; letter-spacing: normal; color: #555; }
+@media (max-width: 700px) { .project-body { font-size: 15px; } }
