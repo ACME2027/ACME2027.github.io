@@ -7,7 +7,7 @@
   <meta name="description" content="ACME provides ambiguity-aware guidance to help users refine code-based visualizations through multimodal editing.">
   <meta name="robots" content="noindex, nofollow, noarchive">
   <meta name="referrer" content="no-referrer">
-  <link rel="stylesheet" href="styles.css?v=17">
+  <link rel="stylesheet" href="styles.css?v=18">
   <link rel="stylesheet" href="assets/player.css?v=3">
   <script defer src="cases.js?v=2"></script>
   <script defer src="assets/player.js?v=3"></script>
@@ -32,7 +32,7 @@
       <div class="section-heading case-study-heading">
         <h2 id="case-study-title">Case Study</h2>
       </div>
-      <p class="case-study-intro project-body">The examples below showcase clarification through direct manipulation and inline widgets. The visualizations are sourced from the <a href="https://observablehq.com/@d3/gallery" target="_blank" rel="noopener noreferrer">D3 Gallery</a> and normalized by ACME as described in Section 5.1 of the paper.</p>
+      <p class="case-study-intro project-body">The examples below showcase clarification through direct manipulation, inline widgets, and natural language follow-up questions. The visualizations are sourced from the <a href="https://observablehq.com/@d3/gallery" target="_blank" rel="noopener noreferrer">D3 Gallery</a> and normalized by ACME as described in Section 5.1 of the paper.</p>
       <p class="case-study-note">ACME provides immediate visual feedback as you use direct manipulation or inline widgets. Click <strong>Export</strong> to download the visualization code with your latest changes.</p>
 
     <section class="cases-section" aria-labelledby="dm-title">
@@ -51,11 +51,15 @@
       <div class="case-grid" id="iw-case-grid"></div>
     </section>
 
-    <section class="cases-section language-case" aria-labelledby="nl-title" hidden>
+    <section class="cases-section language-case" aria-labelledby="nl-title">
       <div class="section-heading">
         <h3 id="nl-title">Natural Language Follow-up Questions</h3>
+        <p class="project-body">This demo shows how ACME uses natural language follow-up questions to clarify editing intent.</p>
       </div>
-      <p>Demo coming soon.</p>
+      <video class="language-demo" controls playsinline preload="metadata" width="1120" height="620" poster="assets/videos/nl-followup-demo-poster.jpg" aria-label="Natural language follow-up question demo">
+        <source src="assets/videos/nl-followup-demo.mp4" type="video/mp4">
+        Your browser does not support embedded video. <a href="assets/videos/nl-followup-demo.mp4">Download the demo</a>.
+      </video>
     </section>
     </section>
   </main>
